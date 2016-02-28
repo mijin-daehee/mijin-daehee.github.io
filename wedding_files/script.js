@@ -36,7 +36,7 @@
 				$gallery.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: 0,
+					transitionDuration: 0
 				});
 			}
 			else
@@ -44,7 +44,7 @@
 				$gallery.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: "1s",
+					transitionDuration: "1s"
 				});
 			}
 			
@@ -57,7 +57,7 @@
 				$bridesmaid.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: 0,
+					transitionDuration: 0
 				});
 			}
 			else
@@ -65,7 +65,7 @@
 				$bridesmaid.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: "1s",
+					transitionDuration: "1s"
 				});
 			}
 			
@@ -82,7 +82,7 @@
 				$groomsmen.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: 0,
+					transitionDuration: 0
 				});
 			}
 			else
@@ -90,7 +90,7 @@
 				$groomsmen.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: "1s",
+					transitionDuration: "1s"
 				});
 			}
 			
@@ -319,7 +319,7 @@
 					{ image : './wedding_files/slide3.jpg' },
 				],
 				horizontal_center : 0,
-				vertical_center : 0,
+				vertical_center : 0
 			});
 		});
 		
@@ -383,7 +383,7 @@
 						if ($(this).hasClass("havehash")) {
 							window.location.href = $(this).attr("href");
 						}
-					},
+					}
 				});
 			}
 			else
@@ -395,7 +395,7 @@
 							if ($(this).hasClass("havehash")) {
 								window.location.href = $(this).attr("href");
 							}
-						},
+						}
 					});
 				}
 				else
@@ -407,7 +407,7 @@
 							if ($(this).hasClass("havehash")) {
 								window.location.href = $(this).attr("href");
 							}
-						},
+						}
 					});
 				}
 			}			
@@ -442,7 +442,7 @@
 	  					$("html").css('overflow','hidden');	
 					}
     			}
-  			},
+  			}
 		});
 		
 		
@@ -468,7 +468,7 @@
 	  				$("html").css('overflow','hidden');	
 				}
     		}
-  		},
+  		}
 		});		
 				
 		
@@ -496,7 +496,7 @@
 	  					$("html").css('overflow','hidden');	
 					}
     			}
-  			},
+  			}
 		});		
 		
 		
@@ -524,7 +524,7 @@
 	  					$("html").css('overflow','hidden');	
 					}
     			}
-  			},
+  			}
 		});		
 		
 		
@@ -552,7 +552,7 @@
 	  					$("html").css('overflow','hidden');	
 					}
     			}
-  			},
+  			}
 		});
 		
 		
@@ -582,7 +582,7 @@
 		//==================================================================================
 		$("#blog-carousel").owlCarousel({
 			items : 3, 
-			pagination: true,
+			pagination: true
 		});
 		
 		$("#blog-carousel .photo-item").on("mouseover touchstart",  function(e){
