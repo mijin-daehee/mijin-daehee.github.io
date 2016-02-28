@@ -1,0 +1,1947 @@
+@charset "utf-8";
+
+/*============================== 
+	- Template Name: NIKH - Responsive HTML Wedding Template
+	- Author: DoubleEight
+	- Version: 1.01
+	- Website: www.dethemes.com
+================================= */	
+
+/*---------------------- 
+	Stylesheet Guide
+------------------------
+00. PRELOADER
+01. GENERAL
+	01-1 Common
+	01-2 Center-Middle Alignment
+	01-3 Fullsize/Fullheight
+02. MENU SECTION
+	02-1 SideNavbar Icon
+		02-1-1 Logo
+		02-1-2 Icon Nav
+	02-2 Main Menu
+03. MAP/LOCATION
+04. CONTENT SECTION
+	04-1 Home/Slider
+	04-2 Where and When
+	04-3 Couple
+	04-4 Gallery
+	04-5 Events and Parties
+	04-6 Bridesmaid
+	04-7 Groomsmen
+	04-8 Blog
+	04-9 Accomodations
+	04-10 Gift Registry
+	04-11 RSVP
+05. SLIDE LAYOUT TO RIGHT
+06. ELEMENT
+	06-1 Icon
+		06-1-1 Size
+		06-1-2 Shape
+		06-1-3 Custom Color
+		06-1-4 Effect Zoom 
+		06-1-5 Effect Rotate
+		06-1-6 Effect Square/Rounded To Circle
+	06-2 Button
+	06-3 Autocrop Image
+	06-4 Photo Item
+		06-4-1 Photo Caption
+	06-5 Popup Template
+		06-5-1 Popup Template-1
+		06-5-2 Popup Template-2
+		06-5-3 Popup Template-3
+07. PLUGIN
+	07-1 Masonry Gallery
+	07-2 Magnific Popup
+08. MEDIA SCREEN
+	- @media (max-width:1199px)
+	- @media (min-width:992px) and (max-width:1199px)
+	- @media (max-width:991px)
+	- @media (min-width:768px) and (max-width:991px)
+	- @media (min-width:768px) and (max-width:991px) and (orientation : portrait)
+	- @media (max-width:767px)
+	- @media (max-width:768px) and (orientation : landscape)
+	- @media (max-width:570px) and (orientation : portrait)
+	- @media (max-width:568px) and (orientation : landscape)
+	- @media (max-width:480px)
+*/
+
+
+/*===============================================*/
+/* 00. PRELOADER		 						 */
+/*===============================================*/
+/* See preloader.css */
+
+
+/*===============================================*/
+/* 01. GENERAL		  	 						 */
+/*===============================================*/
+
+/* 01-1 Common 								     */
+/* ----------------------------------------------*/
+html {
+	overflow-x:hidden;  
+}
+
+body, html {
+	width:100%;
+	background-color:#FFF;
+	font-family: 'PT Sans', sans-serif;	
+	color:#747474;
+}
+
+a{
+	color:#444444;
+	text-decoration:none;	
+}
+
+a:hover{
+	color:#bb5844;
+	text-decoration:none;
+}
+
+a:focus{
+	outline:0;
+	color:#444444;
+	text-decoration:none;
+}
+
+h1, 
+h2, 
+h3,
+h4,
+h5, 
+h6 {
+	font-family: 'Pacifico', cursive;
+	color:#444444;
+}
+
+h1 a, 
+h2 a, 
+h3 a, 
+h4 a, 
+h5 a, 
+h6 a{
+	color:#444444;
+	text-decoration:none;
+}
+
+h1 a:hover, 
+h2 a:hover, 
+h3 a:hover,
+h4 a:hover, 
+h5 a:hover, 
+h6 a:hover{
+	color:#bb5844;
+	text-decoration:none;
+}
+
+h1.white-color,
+h2.white-color,
+h3.white-color,
+h4.white-color,
+h5.white-color,
+h6.white-color{
+	color:#FFF;
+}
+
+h2{
+	font-size:34px;
+	margin-bottom:24px;
+}
+
+p{
+	font-family: 'PT Sans', sans-serif;	
+	color:#747474;
+	font-size:16px;
+	line-height:30px;
+}
+
+p a{
+	color:#747474;
+	text-decoration:underline;
+}
+
+p a:hover{
+	color:#bb5844;
+	text-decoration:underline;
+}
+
+.no-padding{
+	padding:0
+}
+
+.no-margin{
+	margin:0
+}
+
+/* 01-2 Center-Middle Alignment                  */
+/* ----------------------------------------------*/
+.block-centered {
+  text-align: center;
+  height:100%;
+}
+ 
+.block-centered:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+ 
+.centered-item {
+  display: inline-block;
+  vertical-align: middle;
+  width:99%;
+}
+
+/* 01-3 Fullsize/Fullheight		                 */
+/* ----------------------------------------------*/
+.fullsize .fullheight, 
+.fullsize .h10,
+.fullsize .h20,
+.fullsize .h30,
+.fullsize .h40,
+.fullsize .h50,
+.fullsize .h60,
+.fullsize .h70,
+.fullsize .h80,
+.fullsize .h90,
+.fullsize .h100{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+}
+
+.fullsize .h10{
+	height:10% !important;
+}
+.fullsize .h20{
+	height:20% !important;
+}
+.fullsize .h30{
+	height:30% !important;
+}
+.fullsize .h40{
+	height:40% !important;
+}
+.fullsize .h50{
+	height:50% !important;
+}
+.fullsize .h60{
+	height:60% !important;
+}
+.fullsize .h70{
+	height:70% !important;
+}
+.fullsize .h80{
+	height:80% !important;
+}
+.fullsize .h90{
+	height:90% !important;
+}
+.fullsize .h100{
+	height:100% !important;
+}
+
+/*===============================================*/
+/* 02. MENU SECTION  	  					     */
+/*===============================================*/
+
+/* 02-1 SideNavbar Icon 						 */
+/* ----------------------------------------------*/
+.sidebar-menuicon{
+	background:#bb5844;
+	height:100%;
+	top:0;
+	left:0;
+	position:fixed;	
+	width:60px;
+	z-index:999;
+	color:#FFF;
+}
+
+/* 02-1-1 Logo          						 */
+/* ----------------------------------------------*/
+#logo-wrapper{
+	position:absolute;
+	left:-258px;
+	z-index:999;
+}
+
+#logo-link
+{
+	text-decoration:none;
+}
+
+#logo {
+	font-family: 'Montserrat', sans-serif;
+	display:block;
+	background-color:#bb5844;
+	font-size:17px;
+	color:#ddaca2;
+	width:70px;
+	height:70px;
+	padding-top:22px;
+	text-align:center;
+	z-index:999;
+}
+
+#imglogo{
+	width:auto;
+	height:70px;
+}
+
+
+/* 02-1-2 Icon Nav         						 */
+/* ----------------------------------------------*/
+#mobile-menu{
+	display:none
+}
+
+#navbar-menuicon{
+	height:100%;
+}
+
+#navbar-menuicon ul{
+	list-style-type:none;
+}
+
+#navbar-menuicon ul li{
+	margin:10px 0px;
+}
+
+/* All icon in #navbar-menuicon use de-icon classes */
+/* It can be found at Icon Section  */
+/* 06-1 Icon			    	    */
+
+
+/* 02-2 Main Menu						         */
+/* ----------------------------------------------*/
+#main-menu{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal !important;
+	font-size: 13px;
+	background:#450f04;
+	overflow:hidden;
+	padding:0px 30px;
+	position:absolute;
+	width:300px;
+	height:100%;
+	top:0;
+	left:-300px;
+	box-shadow:-5px 0 2px rgba(0,0,0,.15)inset
+}
+
+#main-menu:before{
+	content:"";
+	background-image:url(../images/menu-back.jpg);
+	background-position:left;
+	background-size:cover;
+	opacity:0.25;
+	position:absolute;
+	top: 0;
+ 	left: 0;
+  	bottom: 0;
+  	right: 0;
+}
+
+#main-menu > ul{
+	opacity:0.6;
+	height:525px;
+	margin-top:100px;
+	overflow:auto;
+}
+
+#main-menu ul li a{
+	color:#fff;
+	height:35px;
+	-webkit-transition: 0.3s all ease;
+	   -moz-transition: 0.3s all ease;
+	     -o-transition: 0.3s all ease;
+	    -ms-transition: 0.3s all ease;
+	        transition: 0.3s all ease;	
+	/*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+#main-menu ul li a:hover, #main-menu ul li a:hover:focus, #main-menu ul li.active a {
+	background-color:#a4422e;
+}
+
+#main-menu ul li a:after{
+	font-family: "fontello";
+	content: "\e8ab";
+	position:absolute;
+	right:15px;	
+}
+
+#main-menu ul li a:only-child:after{
+	content: "";
+}
+
+#main-menu ul li a:hover:after{
+	opacity:0.5;
+	-webkit-transition: 0.3s all ease;
+	   -moz-transition: 0.3s all ease;
+	     -o-transition: 0.3s all ease;
+	    -ms-transition: 0.3s all ease;
+	        transition: 0.3s all ease;
+	/*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+#main-menu ul.nav.child > li > a{
+	padding-left:26px;
+	background-color:transparent;
+}
+
+#main-menu ul.nav.child > li > a:hover, #main-menu ul.nav.child > li > a:hover:focus, #main-menu ul.nav.child > li.active > a{
+	background-color:#a4422e;
+}
+
+/*===============================================*/
+/* 03. MAP/LOCATION			                     */
+/*===============================================*/
+#location{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	display:none;
+	z-index:1000;
+}
+
+#location-overlay{
+	position:fixed;
+	background-color:#000;
+	opacity:0.7;
+	width:100%; 
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+#location-map-wrapper{
+	height:100%;
+}
+
+#location_map{
+	width:80%;
+	margin:0 auto;
+	height:500px;
+	top:50%;
+	margin-top:-250px;
+	border:10px solid #FFF;
+}
+
+/*===============================================*/
+/* 04. CONTENT SECTION		                     */
+/*===============================================*/
+#content-wrapper{
+	position:relative;
+	left:0;
+}
+
+#content{
+	margin-left:60px;
+	position:relative;
+	overflow:hidden;
+}
+
+#blocker{
+	background:#FFF;
+	display:none;
+	height:100%;
+	top:0;
+	left:360px;
+	opacity:0;
+	position:fixed;
+	width:100%;
+	z-index:1000;
+	cursor:pointer;
+}
+
+#blocker.visible{
+	display:block
+}
+
+/* 04-1 Home/Slider					        	 */
+/* ----------------------------------------------*/
+#slider{
+	position:relative;
+	overflow:hidden;
+	z-index:1;
+	left:0;
+	height:100%;
+	color:#FFF;
+}
+
+#slider-text-wrapper{
+	position:absolute; 
+	top:0;
+	left:0;
+	width:100%; 
+	height:100%;
+}
+
+#slider-row, #slider-col{	
+	height:100%;
+}
+
+#slider img{
+	background-color:#FFF;
+}
+
+#slider-title{
+	position:relative; 
+	height:100%;
+	width:100%; 
+	text-align:center;
+}
+
+#slider h1{	
+	font-size:52px;
+	color:#FFF;
+}
+
+#small-title{
+	font-family: 'Montserrat', sans-serif;
+	font-size:20px;
+}
+
+#countdown{
+	font-family: 'Montserrat', sans-serif;
+	padding-top:20px;
+	width:50%;
+	margin:0 auto;
+}
+
+#slider-date{
+	position:absolute; 
+	bottom:70px; 
+	width:100%; 
+	text-align:center
+}
+
+#slider-date h3{
+	font-size:36px;
+	font-family: 'Pacifico', cursive;
+	font-weight:normal;
+	color:#FFF;
+}
+
+/* 04-2 Where and When			        	 	 */
+/* ----------------------------------------------*/
+#wherewhen{
+	padding:40px 0 60px 0;
+}
+
+/* 04-3 Couple					        	     */
+/* ----------------------------------------------*/
+#his-photo, #her-photo{
+	height:350px; 
+	/*Fullsize layout will replace this height   */
+	/*with h10-h100 class   */
+}
+
+.couple-text{
+	padding:40px 80px;
+}
+
+.couple-text h2 {
+	font-family: 'Pacifico', cursive;
+	font-size:30px;
+	font-weight:normal;
+}
+
+
+/* 04-4 Gallery					        	     */
+/* ----------------------------------------------*/
+/* Gallery Photo use photo item class and 		 */
+/* masonry layout 								 */
+/* 06-4 Photo Item							     */
+/* 07-1 Masonry Gallery						     */
+
+#gallery-intro{
+	padding:40px 0;
+}
+
+#gallery-main-photo{
+	background:url(./gallery.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:top center;
+	background-repeat:no-repeat;
+	height:420px;
+	/*Fullsize layout will replace this height   */
+	/*with h10-h100 class   */
+}
+
+.safari-mac #gallery-main-photo{
+	background-attachment: scroll;
+}
+
+#gallery-photo{
+	padding:0 100px 100px 100px
+}	
+
+
+/* 04-5 Events and Parties                       */
+/* ----------------------------------------------*/
+#events-intro{
+	padding:40px 0;
+}
+
+#events-main-photo{
+	background:url(./events-main.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:420px;
+	/*Fullsize layout will replace this height   */
+	/*with h10-h100 class   */
+}
+
+.safari-mac #events-main-photo{
+	background-attachment: scroll;
+}
+
+#events-content{
+	padding:0 100px 100px 100px;
+}
+
+#events-content .col-md-6{
+	text-align:left;
+}
+
+
+/* 04-6 Bridesmaid		                         */
+/* ----------------------------------------------*/
+/* Bridesmaid Photo use photo item class and 	 */
+/* masonry layout 								 */
+/* 06-4 Photo Item							     */
+/* 07-1 Masonry Gallery						     */
+
+#bridesmaid-intro{
+	padding:40px 0;
+}
+
+#bridesmaid-main-photo{
+	background:url(../images/bridesmaid.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:420px;
+	/*Fullsize layout will replace this height   */
+	/*with h10-h100 class   */
+}	
+
+.safari-mac #bridesmaid-main-photo{
+	background-attachment: scroll;
+}
+
+#bridesmaid-photo{
+	padding:0 100px 100px 100px
+}			
+
+
+/* 04-7 Groomsmen		                         */
+/* ----------------------------------------------*/
+/* Groomsmen Photo use photo item class and 	 */
+/* masonry layout 								 */
+/* 06-4 Photo Item							     */
+/* 07-1 Masonry Gallery						     */
+
+#groomsmen-intro{
+	padding:40px 0;
+}
+
+#groomsmen-main-photo{
+	background:url(../images/groomsmen.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:420px;
+	/*Fullsize layout will replace this height   */
+	/*with h10-h100 class   */
+}
+
+.safari-mac #groomsmen-main-photo{
+	background-attachment: scroll;
+}
+
+#groomsmen-photo{
+	padding:0 100px 100px 100px
+}	
+
+
+/* 04-8 Blog					        	     */
+/* ----------------------------------------------*/
+#blog-intro{
+	padding:40px 0;
+}
+
+#blog-main-photo{
+	background:url(../images/blog-main.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:420px;
+	/*Fullsize layout will replace this height   */
+	/*with h10-h100 class   */
+}
+
+.safari-mac #blog-main-photo{
+	background-attachment: scroll;
+}
+
+#blog-carousel-wrapper{
+	padding:0 50px
+}
+
+#blog-carousel{
+	text-align:left
+}
+
+#blog-carousel .item{
+	padding:0 15px
+}
+
+.blog-carousel-title{
+	margin:40px 0 10px 0
+}
+
+#blog-content{
+	padding:0 50px 100px 50px;
+}
+
+/* 04-9 Accomodations							 */
+/* --------------------------------------------- */
+/* Accomodation use popup-template-3			 */
+/* 06-5-3 Popup Template-3						 */
+
+
+/* 04-10 Gift Registry	                         */
+/* --------------------------------------------- */
+/* Gift Registry use popup-template-3			 */
+/* 06-5-3 Popup Template-3						 */
+
+.registry-logo{
+	width:90%;
+}
+
+.registry-button{
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+/* 04-11 RSVP			                         */
+/* ----------------------------------------------*/
+#rsvp-intro{
+	padding:40px 0;
+}
+
+#rsvp-main-photo{
+	background:url(../images/rsvp-main.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:top center;
+	background-repeat:no-repeat;
+	height:420px;
+	/*Fullsize layout will replace this height   */
+	/*with h10-h100 class   */
+}
+
+.safari-mac #rsvp-main-photo{
+	background-attachment: scroll;
+}
+
+#rsvp-form{
+	padding:40px 0;
+}
+
+#form-wrapper{
+	width:60%;
+	margin:0 auto;
+	padding:30px 0
+}
+
+.result{
+	margin-bottom:20px;
+	display:none;
+}
+
+.result .bg-danger, .result .bg-success{
+	padding:10px;
+	color:#ffffff;
+}
+
+.result .bg-danger{
+	background-color:#C33
+}
+
+.result .bg-success{
+	background-color:#bb5844
+}
+
+input[type=text].form-control, input[type=email].form-control{
+   height:45px;
+}
+
+input[type=text].form-control, input[type=email].form-control, select.form-control, textarea.form-control{
+	border-radius:0 !important;
+	border-color:#747474;
+}
+
+#submitButton{
+	margin-top:30px;
+	outline:0;
+}
+
+/*===============================================*/
+/* 05. SLIDE LAYOUT TO RIGHT	                 */
+/*===============================================*/
+#main-menu, .sidebar-menuicon, #content-wrapper {
+	-webkit-transition:left .5s ease;
+	transition:left .5s ease;
+	/*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+.sidebar-menuicon.moveto-right,#content-wrapper.moveto-right{
+	left:300px
+}
+
+/*===============================================*/
+/* 06. ELEMENT			                         */
+/*===============================================*/
+
+/* ----------------------------------------------*/
+/* 06-1 Icon 						        	 */
+/* ----------------------------------------------*/
+.de-icon{
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size:30px;
+	text-align: center;
+	vertical-align: middle;	
+	display:inline-block;
+	
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	-ms-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+	/*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+.de-icon i{
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	-ms-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+	/*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+/*------------------------------------------------*/
+/* 06-1-1 Size 								   	  */
+/*------------------------------------------------*/
+.de-icon.large-size{
+	width: 72px;
+	height: 72px;
+	line-height: 72px;
+	font-size:32px;	
+}
+
+.de-icon.medium-size{
+	width: 56px;
+	height: 56px;
+	line-height: 56px;
+	font-size:28px;	
+}
+
+.de-icon.small-size{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size:24px;	
+}
+
+/*------------------------------------------------*/
+/* 06-1-2 Shape 								  */
+/*------------------------------------------------*/
+.de-icon.square{
+	background-color:#bb5844;
+	color:#FFF;
+}
+
+.de-icon.circle{
+	border-radius: 50%;
+	background-color:#bb5844;
+	color:#FFF;
+}
+
+.de-icon.rounded{
+	border-radius: 20%;
+	background-color:#bb5844;
+	color:#FFF;
+}
+
+.de-icon.outline{
+	background-color:#FFF;
+	color:#bb5844;
+	border:1px solid #bb5844;
+}
+
+a:hover .de-icon.circle, a:hover .de-icon.rounded, a:hover .de-icon.square{
+	background-color:#444444;
+	color:#FFF;
+}
+
+a:hover .de-icon.outline{
+	background-color:#bb5844;
+	color:#FFF;
+}
+
+/*------------------------------------------------*/
+/* 06-1-3 Custom Color 							  */
+/*------------------------------------------------*/
+.de-icon.customcolor{
+	color:#a4422e;	
+}
+
+a:hover .de-icon.customcolor{
+	color:#444444
+}
+
+.de-icon.customcolor i{
+	color:#FFF;
+	opacity:0.5;
+}
+
+a:hover .de-icon.customcolor i{
+	color:#FFF;
+	opacity:1;
+}
+
+.de-icon.circle.customcolor, .de-icon.square.customcolor, .de-icon.rounded.customcolor{
+	background-color:#a4422e;
+	color:#fff
+}
+
+a:hover .de-icon.circle.customcolor, a:hover .de-icon.square.customcolor, a:hover .de-icon.rounded.customcolor{
+	background-color:#444444;
+	color:#fff;
+}
+
+.de-icon.outline.customcolor{
+	background-color:#FFF;
+	color:#a4422e;
+	border:1px solid #a4422e;
+}
+
+a:hover .de-icon.outline.customcolor{
+	background-color:#a4422e;
+	color:#FFF;
+}
+
+/*------------------------------------------------*/
+/* 06-1-4 Effect Zoom 							  */
+/*------------------------------------------------*/
+.de-icon.effect1{
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	     -o-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);	
+}
+
+a:hover .de-icon.effect1{
+	-webkit-transform: scale(1.2);
+	   -moz-transform: scale(1.2);
+	     -o-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);	
+}
+
+/*------------------------------------------------*/
+/* 06-1-5 Effect Rotate 						  */
+/*------------------------------------------------*/
+.de-icon.effect2 i{
+	-webkit-transform: rotate(0deg);
+	   -moz-transform: rotate(0deg);
+	     -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);	
+}
+
+a:hover .de-icon.effect2 i{
+	-webkit-transform: rotate(360deg);
+	   -moz-transform: rotate(360deg);
+	     -o-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);	
+}
+
+/*------------------------------------------------*/
+/* 06-1-6 Effect Square/Rounded To Circle 	      */
+/*------------------------------------------------*/
+a:hover .de-icon.effect3{
+	background-color:#a4422e;
+	color:#fff;
+	border-radius: 50%;
+}
+
+
+/*-----------------------------------------------*/
+/* 06-2 Button 									 */
+/*-----------------------------------------------*/
+/* Replace bootstrap default button color		 */
+
+.btn-default{
+	background-color:#bb5844 !important;
+	color:#fff !important;
+	border-radius: 0 !important;
+	border-color:#bb5844 !important;
+	font-family: 'Montserrat', sans-serif !important;
+	font-size:15px !important;
+	font-weight:normal !important;
+}
+
+.btn-default:hover{
+	background-color:#000000 !important;
+	border-color:#000000 !important;
+}
+
+.custom-size{
+	padding:13px 60px; 
+	margin-top:30px
+}
+
+/*-----------------------------------------------*/
+/* 06-3 Autocrop Image							 */
+/*-----------------------------------------------*/
+.autocrop-image{
+ 	display:block;
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}
+
+/*-----------------------------------------------*/
+/* 06-4 Photo Item								 */
+/*-----------------------------------------------*/
+.photo-item {
+	position:relative;
+	overflow:hidden;
+}
+
+.photo-item-preview > img {
+	width:100%;
+}
+
+.photo-item-preview > .autocrop-image, .photo-item-preview > img {
+	-webkit-transition: -webkit-transform 0.5s; 
+		-ms-transition: -ms-transform 0.5s;
+		 -o-transition: -o-transform 0.5s;
+			transition: transform 0.5s;
+	/*The transition will be disabled on script.js for tablet/mobile*/		
+}
+
+.photo-item-overlay {
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	bottom: 0;
+	left: 0; 
+	background-color: rgba(0, 0, 0);
+	opacity: 0; 
+	-webkit-transform: scale(0); 
+		-ms-transform: scale(0); 
+		 -o-transform: scale(0); 
+			transform: scale(0); 
+	-webkit-transition: -webkit-transform 0.5s; 
+		-ms-transition: -ms-transform 0.5s;
+		 -o-transition: -o-transform 0.5s;
+			transition: transform 0.5s;
+	/*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+.photo-item:hover .photo-item-overlay,
+.hover .photo-item-overlay {
+	opacity: 1; 
+	-webkit-transform: scale(1); 
+		-ms-transform: scale(1);
+		 -o-transform: scale(1);  
+			transform: scale(1); 
+}
+
+.photo-item:hover .photo-item-preview > .autocrop-image, .photo-item:hover .photo-item-preview > img,
+.hover .photo-item-preview > .autocrop-image, .hover .photo-item-preview > img { 
+	-webkit-transform: scale(1.1); 
+		-ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);  
+			transform: scale(1.1); 
+}
+
+/* 06-4-1 Photo Caption 						 */
+/*-----------------------------------------------*/
+.photo-caption-wrapper{
+	position:absolute; 
+	bottom:2px; 
+	display:block; 
+	width:100%; 
+	height:30%;
+}
+
+.photo-caption{
+	color:#ffffff; 
+	font-size:18px;
+	font-family: 'Montserrat', sans-serif;  
+	letter-spacing:1px; 
+	text-align:center; 
+	text-decoration:none; 
+	display:block;	
+}
+
+.other-caption{
+	text-align:center; 
+	color:#ffffff; 
+}
+
+/*-----------------------------------------------*/
+/* 06-5 Popup Template							 */
+/*-----------------------------------------------*/
+
+/* 06-5-1 Popup Template-1	 					 */
+/*-----------------------------------------------*/
+#popup-template-1{
+	width:900px;
+	margin:30px auto; 
+	background-color:#FFF;
+}
+
+#popup-template-1 #main-image{
+	height:485px;
+	width:100%;
+	position:relative;
+}
+
+#popup-template-1 #additional-title{
+	width:100%; 
+	bottom:60px; 
+	position:absolute; 
+	text-align:center
+}
+
+#popup-template-1 #additional-title span{
+	border:1px solid #FFF; 
+	color:#FFF; 
+	font-family: 'Montserrat', sans-serif; 
+	font-size:20px; 
+	padding:10px 20px
+}
+
+#popup-template-1 #the-image{
+	height:100%;
+	width:100%;
+}
+
+#popup-template-1 #main-image-overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	height:485px; 
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#popup-template-1 #the-content{
+	padding:35px 75px;
+}
+
+#popup-template-1 #the-content #socialnetwork-icon{
+	text-align:center; 
+	margin-bottom:20px;
+}
+
+#popup-template-1 #the-content img{
+	width:100%;
+	margin:10px 0
+}
+
+/* 06-5-2 Popup Template-2	                     */
+/* ----------------------------------------------*/
+#popup-template-2{
+	width:1015px;
+	height:600px;
+	margin:30px auto; 
+	background-color:#FFF; 
+}
+
+#popup-template-2 #main-image{
+	width:365px; 
+	height:600px; 
+	float:left;
+}
+
+#popup-template-2 #the-image{
+	height:100%;
+	width:100%;
+}
+
+#popup-template-2 #the-content{
+	width:650px; 
+	height:600px; 
+	padding:0 60px;
+	display:block; 
+	float:right; 
+	background-color:#FFF; 
+	overflow:auto; 
+	text-align:center
+}
+
+#popup-template-2 #the-content-wrapper{
+	margin:60px 0;
+}
+
+#popup-template-2 .list-info{
+	color:#747474;
+	font-size:16px;
+	line-height:30px;
+}
+
+#popup-template-2 .list-info i{
+	color:#000;
+}
+
+/* 06-5-3 Popup Template-3		                 */
+/* ----------------------------------------------*/
+#popup-template-3{
+	width:1015px;
+	margin:30px auto; 
+	background-color:#FFF; 
+	padding:50px;
+}
+
+#popup-template-3 h2{
+	text-align:center
+}
+
+#popup-template-3 #intro{
+	text-align:center; 
+	padding:0 50px;
+}
+
+#popup-template-3 #content-list{
+	margin-top:50px
+}
+
+#popup-template-3 .content-list-item{
+	margin-bottom:50px
+}
+
+#popup-template-3 .content-list-image img{
+	width:100%;
+}
+
+#popup-template-3 .content-list-title{
+	margin-top:0;
+	margin-bottom:8px;
+}
+
+#popup-template-3 .content-list-text{
+	line-height:22px;
+}
+
+
+/*===============================================*/
+/* 07. PLUGIN			 						 */
+/*===============================================*/
+
+/* 07-1 Masonry Gallery		                     */
+/* ----------------------------------------------*/
+.masonry{
+	width:101%;
+	overflow:hidden;
+}
+
+.fullsize .masonry.one-row .masonry_col{
+	height:100%;
+}
+
+.fullsize .masonry.two-row .masonry_col{
+	height:50%;
+}
+
+.fullsize .masonry.three-row .masonry_col{
+	height:33.4%;
+}
+
+.fullsize .masonry.four-row .masonry_col{
+	height:25%;
+}
+
+.fullsize .masonry_col{
+	height:300px
+}
+
+.grid_sizer.four-col{
+	width:25%;
+}
+
+.masonry_col.w25{
+	width:25%;
+}
+
+.masonry_col.w50{
+	width:50%;
+}
+
+.masonry_col.w75{
+	width:75%;
+}
+
+.masonry_col.w100{
+	width:100%;
+}
+
+.grid_sizer.three-col{
+	width:33.33%;
+}
+
+.masonry_col.w33{
+	width:33.33%;
+}
+
+.masonry_col.w66{
+	width:66.7%;
+}
+
+/* 07-2 Magnific Popup*/
+.mfp-wrap{
+	webkit-overflow-scrolling: touch 
+}
+
+
+/*===============================================*/
+/* 08. MEDIA SCREEN		  						 */
+/*===============================================*/
+@media (max-width:1199px){
+/* 02-1 SideNavbar Icon 						 */
+/* ----------------------------------------------*/
+.sidebar-menuicon{
+	height:60px;
+	width:100%;
+}
+
+/* 02-1-1 Logo          						 */
+/* ----------------------------------------------*/
+#logo-wrapper{
+	position:absolute;
+	left:10px;
+}
+
+#logo {
+	width:60px;
+	height:60px;
+	padding-top:20px;
+}
+
+#imglogo{
+	width:auto;
+	height:60px;
+}
+
+.top-bar #imglogo{
+	width:auto;
+	height:50px;
+}
+
+/* 02-1-2 Icon Nav         						 */
+/* ----------------------------------------------*/
+#mobile-menu{
+	display:block
+}
+
+#navbar-menuicon ul li {
+	display:inline-block;
+	margin:0;
+	margin-top:13px
+}
+
+#navbar-menuicon ul li.hideonmobile{
+	display:none;
+}
+
+#navbar-menuicon .block-centered {
+  text-align: right;
+  height:100%;
+  padding-right:10px;
+}
+
+/* 02-2 Main Menu						         */
+/* ----------------------------------------------*/
+#main-menu{
+	top:60px;
+	left:0;
+	padding:0;
+	width:100%;
+	height:auto;
+	overflow:visible;
+	display:none;
+	background-color:#bb5844;
+	box-shadow:none;
+	border-bottom:1px solid #323D3D
+}
+
+#main-menu:before{
+	background-image:none;
+}
+
+#main-menu > ul{
+	height:350px;
+	background-color:#bb5844;
+	margin:0;
+	overflow:auto;
+ 	-webkit-overflow-scrolling: touch;
+}
+
+/* 04. Content Section							 */
+/* ----------------------------------------------*/
+#content {margin-left:0}
+
+
+/* 04-4 Gallery					        	     */
+/* ----------------------------------------------*/
+#gallery-main-photo{
+	background-attachment:scroll;
+	background-position:center center !important;
+	height:400px;
+}
+
+/* 04-5 Events and Parties                       */
+/* ----------------------------------------------*/
+#events-main-photo{
+	background-attachment:scroll;
+	background-position:center center !important;
+	height:400px;
+}
+
+/* 04-6 Bridesmaid		                         */
+/* ----------------------------------------------*/
+#bridesmaid-main-photo{
+	background-attachment:scroll;
+	background-position:center center !important;
+	height:400px;
+}
+
+/* 04-7 Groomsmen		                         */
+/* ----------------------------------------------*/
+#groomsmen-main-photo{
+	background-attachment:scroll;
+	background-position:center center !important;
+	height:400px;
+}
+
+
+/* 04-8 Blog					        	     */
+/* ----------------------------------------------*/
+#blog-main-photo{
+	background-attachment:scroll;
+	background-position:center center !important;
+	height:400px;
+}
+
+/* 04-11 RSVP			                         */
+/* ----------------------------------------------*/
+#rsvp-main-photo{
+	background-attachment:scroll;
+	background-position:top center !important;
+	height:400px;
+}
+
+/* 05. Slide Layout to Right					 */
+/* ----------------------------------------------*/
+#main-menu,.sidebar-menuicon,#content-wrapper{
+	-webkit-transition:none;
+	transition:none;
+}
+
+/* 06-5-2 Popup Template-2	                     */
+/* ----------------------------------------------*/
+#popup-template-2{
+	width:900px;
+}
+
+#popup-template-2 #main-image{
+	width:350px; 
+}
+
+#popup-template-2 #the-content{
+	width:550px; 
+}
+
+/* 06-5-3 Popup Template-3	                     */
+/* ----------------------------------------------*/
+#popup-template-3{
+	width:900px;
+}
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+/* 04-1 Home/Slider					        	 */
+/* ----------------------------------------------*/
+#countdown{
+	width:59%;
+}
+
+/* 04-8 Blog					        	     */
+/* ----------------------------------------------*/
+#blog-content{
+	padding:0 30px 100px 30px;
+}
+
+/* 07-1 Masonry Gallery		                     */
+/* ----------------------------------------------*/
+.masonry-image{
+	height:210px
+}
+}
+
+@media (max-width:991px){	
+/* 04. Content Section							 */
+/* ----------------------------------------------*/
+#wherewhen ,#gallery-intro, #events-intro, #bridesmaid-intro, #groomsmen-intro, #blog-intro, #rsvp-intro, #rsvp-form, .couple-text{
+	padding-right:80px; 
+	padding-left:80px
+}
+
+/* 04-5 Events and Parties                       */
+/* ----------------------------------------------*/
+#events-content .col-md-6{
+	margin-bottom:40px;
+}
+
+/* 04-11 RSVP			                         */
+/* ----------------------------------------------*/
+#form-wrapper{
+	width:80%;
+}
+
+/* 06-5-1 Popup Template-1	                     */
+/* ----------------------------------------------*/
+#popup-template-1{
+	width:90%;
+}
+
+/* 06-5-2 Popup Template-2	                     */
+/* ----------------------------------------------*/
+#popup-template-2{
+	width:90%;
+}
+
+#popup-template-2 #main-image{
+	display:none;
+}
+
+#popup-template-2 #the-content{
+	width:100%;
+}
+
+/* 06-5-3 Popup Template-3	                     */
+/* ----------------------------------------------*/
+#popup-template-3{
+	width:90%;
+}
+
+/* 07-1 Masonry Gallery		                     */
+/* ----------------------------------------------*/
+.masonry{
+	width:100%;
+}
+
+.masonry_col, .grid_sizer{
+	width:50% !important;
+}
+
+.masonry_col.hidelast{
+	display:none;
+}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+/* 04-1 Home/Slider					        	 */
+/* ----------------------------------------------*/
+#countdown{
+	width:40%;
+}
+
+/* 04-8 Blog					        	     */
+/* ----------------------------------------------*/
+#blog-content{
+	padding:0 20px 100px 20px;
+}
+
+/* 07-1 Masonry Gallery		                     */
+/* ----------------------------------------------*/
+.masonry-image{
+	height:250px
+}
+}
+
+@media (min-width:768px) and (max-width:991px) and (orientation : portrait) {
+/* 03. Map/Location                   			 */
+/* ----------------------------------------------*/
+#location_map{
+	height: 700px;
+	margin-top:-350px;
+}
+}
+
+
+@media (max-width:767px) {
+/* 03. Map/Location                   			 */
+/* ----------------------------------------------*/
+#location_map{
+	height: 600px;
+	margin-top:-300px;
+}
+
+/* 04. Content Section							 */
+/* ----------------------------------------------*/
+#wherewhen ,#gallery-intro, #events-intro, #bridesmaid-intro, #groomsmen-intro, #blog-intro, #rsvp-intro, #rsvp-form, .couple-text{
+	padding-right:30px; 
+	padding-left:30px
+}
+
+/* 04-1 Home/Slider					        	 */
+/* ----------------------------------------------*/	
+#countdown{
+	width:50%;
+}
+
+/* 04-4 Gallery					        	     */
+/* ----------------------------------------------*/
+#gallery-photo{
+	padding:0 50px 70px 50px
+}	
+
+/* 04-5 Events and Parties                       */
+/* ----------------------------------------------*/
+#events-content{
+	padding:0 50px 70px 50px;
+}
+
+/* 04-7 Bridesmaid		                         */
+/* ----------------------------------------------*/
+#bridesmaid-photo{
+	padding:0 50px 70px 50px
+}	
+
+/* 04-7 Groomsmen		                         */
+/* ----------------------------------------------*/
+#groomsmen-photo{
+	padding:0 50px 70px 50px
+}	
+
+/* 04-8 Blog					        	     */
+/* ----------------------------------------------*/
+#blog-content{
+	padding:0 0 70px 0;
+}
+
+/* 04-10 Gift Registry	                         */
+/* ----------------------------------------------*/
+.registry-logo{
+	width:80%;
+}
+
+.registry-button{
+	margin-top:10px;
+	margin-bottom:30px;
+}
+
+/* 04-11 RSVP			                         */
+/* ----------------------------------------------*/
+#form-wrapper{
+	width:95%;
+}	
+
+/*-----------------------------------------------*/
+/* 06-4 Photo Item								 */
+/*-----------------------------------------------*/
+.other-caption{
+	line-height:18px;
+}
+
+/* 06-5-3 Popup Template-3	                     */
+/* ----------------------------------------------*/
+#popup-template-3 .content-list-item{
+	text-align:center;
+}
+
+#popup-template-3 .content-list-title{
+	margin-top:20px;
+}
+
+
+/* 07-1 Masonry Gallery		                     */
+/* ----------------------------------------------*/
+.masonry-image{
+	height:200px
+}
+}
+
+
+@media (max-width:768px) and (orientation : landscape) {
+/* 02-1 SideNavbar Icon 						 */
+/* ----------------------------------------------*/
+.sidebar-menuicon{
+	display:none;
+}
+
+/* 03. Map/Location                   			 */
+/* ----------------------------------------------*/
+#location_map{
+	height: 300px;
+	margin-top:-150px;
+}
+
+/* 04-1 Home/Slider					        	 */
+/* ----------------------------------------------*/
+#slider-title .block-centered {
+  height:auto;
+  margin-top:30px;
+}
+
+#slider h1{	
+	font-size:36px;
+	line-height:24px;	
+}
+
+#small-title{
+	font-size:13px;
+}
+
+#countdown{
+	width:45%;
+	padding-top:10px
+}
+
+.countdown-amount {
+	width:38px;
+	height:38px;
+	line-height:38px;
+	font-size:15px;
+}
+.countdown-period {
+	font-size:10px;
+	padding-top:5px;
+}
+
+#slider-date{
+	bottom:60px;
+}
+
+#slider-date h3{
+	font-size:26px;	
+}
+
+/* 06-5-2 Popup Template-2	                     */
+/* ----------------------------------------------*/
+#popup-template-2, #popup-template-2 #the-content {
+	height:250px !important;
+}
+
+#popup-template-2 #the-content{
+	padding:0 40px;
+}
+
+#popup-template-2 #the-content-wrapper{
+	margin:40px 0;
+}
+}
+
+@media (max-width:570px) and (orientation : portrait) {
+/* 03. Map/Location                   			 */
+/* ----------------------------------------------*/
+#location_map{
+	height: 340px;
+	margin-top:-170px;
+}
+
+/* 04-1 Home/Slider					        	 */
+/* ----------------------------------------------*/	
+#slider h1{	
+	font-size:36px;
+	line-height:24px;
+	
+}
+
+#small-title{
+	font-size:13px;
+}
+
+#countdown{
+	width:70%;
+	padding-top:10px
+}
+
+.countdown-amount {
+	width:38px;
+	height:38px;
+	line-height:38px;
+	font-size:15px;
+}
+.countdown-period {
+	font-size:10px;
+	padding-top:5px;
+}
+
+#slider-date{
+	bottom:40px;
+}
+
+#slider-date h3{
+	font-size:26px;	
+}
+}
+
+@media (max-width:568px) and (orientation : landscape) {
+/* 02-2 Main Menu						         */
+/* ----------------------------------------------*/
+#main-menu, #main-menu > ul{
+	height: 175px;
+}
+
+/* 03. Map/Location                   			 */
+/* ----------------------------------------------*/
+#location_map{
+	height: 240px;
+	margin-top:-120px;
+}
+}
+
+@media (max-width:480px) {	
+/* 04-3 Couple						        	 */
+/* ----------------------------------------------*/
+#his-photo, #her-photo{
+	height:240px;
+}
+
+/* 04-4 Gallery					        	     */
+/* ----------------------------------------------*/
+#gallery-main-photo{
+	height:240px;
+}
+
+#gallery-photo{
+	padding:0 35px 35px 35px
+}
+
+/* 04-5 Events and Parties                       */
+/* ----------------------------------------------*/
+#events-main-photo{
+	height:240px;
+}
+
+#events-content{
+	padding:0 35px 35px 35px;
+}	
+
+#events-content .col-md-6{
+	text-align:center;
+}
+
+/* 04-6 Bridesmaid					        	 */
+/* ----------------------------------------------*/
+#bridesmaid-main-photo{
+	height:240px;
+}
+
+#bridesmaid-photo{
+	padding:0 35px 35px 35px
+}	
+
+/* 04-7 Groomsmen					        	 */
+/* ----------------------------------------------*/
+#groomsmen-main-photo{
+	height:240px;
+}
+
+#groomsmen-photo{
+	padding:0 35px 35px 35px
+}	
+
+/* 04-8 Blog					        	     */
+/* ----------------------------------------------*/
+#blog-main-photo{
+	height:240px;
+}
+
+#blog-carousel{
+	text-align:center
+}
+
+#blog-carousel-wrapper{
+	padding:0 30px
+}
+
+/* 04-11 RSVP						        	 */
+/* ----------------------------------------------*/
+#rsvp-main-photo{
+	height:240px;
+}
+
+/* 06-5-1 Popup Template-1	                     */
+/* ----------------------------------------------*/
+#popup-template-1 #the-content{
+	padding-right:30px;
+	padding-left:30px;
+	text-align:center;
+}
+
+/* 06-5-2 Popup Template-2	                     */
+/* ----------------------------------------------*/
+#popup-template-2, #popup-template-2 #the-content {
+	height:420px;
+}
+
+#popup-template-2 #the-content{
+	padding:0 30px;
+}
+
+#popup-template-2 #the-content-wrapper{
+	margin:40px 0;
+}
+
+/* 06-5-3 Popup Template-3	                     */
+/* ----------------------------------------------*/
+#popup-template-3{
+	padding-right:5px;
+	padding-left:5px;
+}
+
+#popup-template-3 #intro{
+	padding-right:30px;
+	padding-left:30px;
+}
+
+/* 07-1 Masonry Gallery		                     */
+/* ----------------------------------------------*/
+.masonry_col, .grid_sizer{
+	width:100% !important;
+}	
+
+.masonry-image{
+	height:250px
+}
+}

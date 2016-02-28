@@ -1,0 +1,178 @@
+#content {margin-left:0;}
+header {z-index:9999}
+
+/*===============================================*/
+/* Menu 										 */
+/*===============================================*/
+#nav {
+	font-family: 'Montserrat', sans-serif;
+	font-size:12px;
+	text-transform:uppercase;
+	z-index:998;
+	width:100%;
+}
+
+.navbar {
+	border-radius:0;
+	margin-bottom:0;
+}
+
+.navbar-default{
+	border:none;
+}
+
+.navbar-default .navbar-nav > li > a:focus
+{
+	outline:0;
+}
+
+/*===============================================*/			
+/* Menu Color									 */
+/*===============================================*/
+
+/* navbar */
+
+.navbar-default {
+    background-color: #bb5844;
+    border-color: #bb5844;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+
+/* link */
+.navbar-default .navbar-nav  {
+	background-color:#bb5844;
+	
+}
+
+.navbar-default .navbar-nav > li > a {
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	-ms-transition: 0.3s all ease;
+	transition: 0.3s all ease;	
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+	background-color: #a4422e;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	-ms-transition: 0.3s all ease;
+	transition: 0.3s all ease;	
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #a4422e;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #a4422e;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	-ms-transition: 0.3s all ease;
+	transition: 0.3s all ease;	
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #000;
+	border-color: #000;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	-ms-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
+/*===============================================*/
+/* 02-1-1 Logo          						 */
+/*===============================================*/
+#logo-wrapper-1{
+	position:absolute;
+}
+
+#logo-link
+{
+	text-decoration:none;
+}
+
+#logo {
+	font-family: 'Montserrat', sans-serif;
+	display:block;
+	background-color:#bb5844;
+	font-size:17px;
+	color:#fff;
+	width:70px;
+	height:70px;
+	padding-top:22px;
+	text-align:center;
+	z-index:999;
+}
+
+#imglogo{
+	width:auto;
+	height:70px;
+}
+
+@media (max-width: 1200px) {
+#logo{
+	height:50px;
+	padding-top:12px;
+}
+	
+].navbar-default .navbar-nav > li > a {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+}
