@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0047)http://demo.dethemes.com/nikh/index-topbar.html -->
-<html lang="en" class=" desktop   landscape" style="overflow-y: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="ko" class=" desktop   landscape" style="overflow-y: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
      	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-     	<meta name="description" content="NIKH - Responsive HTML Wedding Template">
-      	<meta name="author" content="www.dethemes.com">
+     	<meta name="description" content="4월 2일 미진 + 대희 결혼합니다.">
+      	
       	<title>4월 2일 미진 + 대희 결혼합니다.</title>
         
         <!-- Favicon -->
@@ -40,11 +40,19 @@
         <!-- Skin CSS - Create alternate theme color. Just remove the comment tag from the css below -->
         <!-- <link href="css/skin/pink.css" rel="stylesheet" media="screen"> -->
     	<!-- <link href="css/skin/purple.css" rel="stylesheet" media="screen"> -->
-        
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 	
 	<body class="top-bar  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
-  <div class="pace-progress-inner"></div>
-</div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=311565168877418";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="pace-progress-inner"></div>
+    </div>
 <div class="pace-activity"></div></div>
     
 			<!--PRELOADER-->
@@ -482,14 +490,15 @@
                                       <a href="https://www.facebook.com/Revehumajin">신부의 페이스북에 글 남기기</a>
                                       </p>
 
-
+                                    <br />
                                     <p class="animation delay1 fadeInUp animated" style="visibility: visible;">
-                                      카카오톡으로 청첩장 전달하기
+                                        <a id="kakao-link-btn" href="javascript:;">
+                                        카카오톡으로 청첩장 전달하기
+                                        </a>
                                     </p>                                            
-                                    <p class="animation delay1 fadeInUp animated" style="visibility: visible;">
-                                      페이스북에 공유하기
-                                    </p>
+                                    
                                 	<!--<a href="#events-content" class="smoothscroll animation delay1 fadeInUp"><div class="de-icon inlineblock medium-size "><i class="de-icon-down-open-big"></i></div></a>-->
+                                    <div class="fb-like" data-href="https://mijin-daehee.github.io" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-width="100%" style="margin-top:100px; margin-left:200px"></div>
                                      
                                 </div>
                             </div> 
@@ -497,14 +506,11 @@
                             <!--END of TITLE AND TEXT-->
                          	
     					</div> <!--END of EVENTS INTRO-->
-                    
+                            
                     </section>	
-                                       
-                    
-                    
-                    
                     
                 <div id="blocker"></div></div> <!--END of CONTENT-->
+
 			</div> <!--END of CONTENT WRAPPER-->
        
         <!-- jQuery -->
@@ -553,5 +559,24 @@
         <script type="text/javascript" src="./wedding_files/script.js"></script> 
         <script type="text/javascript" src="./wedding_files/custom-sticky.js"></script>
         <script type="text/javascript" src="./wedding_files/style-switcher.js"></script> 
+        <script>
+            // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('eb61289ee4de0940117a0aefcb3c32a1');
+
+            // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+            Kakao.Link.createTalkLinkButton({
+              container: '#kakao-link-btn',
+              label: '4월 2일 미진 + 대희 결혼합니다',
+              image: {
+                src: 'http://mijin-daehee.github.io/wedding_files/preloader.jpg',
+                width: '300',
+                height: '200'
+              },
+              webButton: {
+                text: '4월 2일 미진 + 대희 결혼합니다',
+                url: 'http://mijin-daehee.github.io' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+              }
+            });
+            </script>
 	   
 <div id="ascrail2000" class="nicescroll-rails" style="width: 7px; z-index: 999; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0; background: rgb(170, 170, 170);"><div style="position: relative; top: 0px; float: right; width: 7px; height: 169px; border: none; border-radius: 0px; background-color: rgb(26, 33, 44); background-clip: padding-box;"></div></div></body><div></div><div></div></html>
