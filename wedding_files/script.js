@@ -327,9 +327,9 @@
 		
 		// COUNTDOWN
 		//===================================================================================
-		var theday = new Date();
-		theday = new Date(2016, 3, 2);
-		$('#countdown').countdown({until: theday, format: 'DHMS'});
+		// var theday = new Date();
+		// theday = new Date(2016, 3, 2);
+		// $('#countdown').countdown({until: theday, format: 'DHMS'});
 
 		
 		

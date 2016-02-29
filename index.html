@@ -42,7 +42,7 @@
     	<!-- <link href="css/skin/purple.css" rel="stylesheet" media="screen"> -->
         <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 	
-	<body class="top-bar  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+	<body class="top-bar">
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -51,9 +51,6 @@
       js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=311565168877418";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="pace-progress-inner"></div>
-    </div>
-<div class="pace-activity"></div></div>
     
 			<!--PRELOADER-->
             <div id="white-screen"></div>
@@ -97,7 +94,6 @@
                                                 <!--COUPLE NAME / SLIDER TITLE-->
                                             	<h1 class="animation delay1 fadeInRight animated">미진, 대희</h1>
                                         		<span id="small-title" class="animation delay2 fadeInRight animated">결혼합니다</span>  
-                                        		<div id="countdown" class="animation delay3 fadeInRight"></div> 
     										</div>
 										</div> <!--END of CENTER-MIDDLE ALIGN BLOCK-->
                                         
@@ -120,13 +116,13 @@
                     <!--NAVBAR-->
                     <!--===================================================================================-->
         			<header> 	
-                        <div id="nav-sticky-wrapper" class="sticky-wrapper" style="height: 70px;"><nav id="nav" class="navbar navbar-default" role="navigation">
+                        <nav id="nav" class="navbar navbar-default" role="navigation">
   							<div class="container">
                             
                             	<!--LOGO-->
                             	<div id="logo-wrapper-1">
-                					<a id="logo-link" href="http://demo.dethemes.com/nikh/index-topbar.html#">
-                    					<span id="logo">미진+대희</span>
+                					<a id="logo-link">
+                    					<span id="logo"></span>
                    					</a>
                 				</div><!--END of LOGO-->
                         
@@ -151,7 +147,7 @@
      								</ul>
    								</div><!-- /.navbar-collapse -->
   							</div><!-- /.container -->
-						</nav></div> 
+						</nav>
                         
 					</header><!--END of NAVBAR-->
                     
@@ -167,14 +163,18 @@
                             	<div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 text-center">
                                 	
                                     <!--WHERE AND WHEN TEXT-->
-                                	<h2 class="animation fadeInUp animated" style="visibility: visible;">시간 및 장소</h2>
-                                    <p class="animation delay1 fadeInUp animated" style="visibility: visible;">결혼식은 2016년 4월 2일 오후 2시 30분에 평촌역 앞의 <a href="http://place.map.daum.net/26905684" target="_blank">아르떼 채플 컨벤션 7층</a>에서 진행됩니다. 식사는 결혼식 한 시간 전인 1시 30분부터 가능하며 갈비탕 및 한정식이 제공될 예정입니다. 웨딩홀 근처로 오시면 주차 안내를 받으실 수 있으며, 식장에서 주차권을 받아 가시면 무료 주차가 가능합니다.</p>
-                                    
+                                	<h2 class="animation fadeInUp animated">시간 및 장소</h2>
+                                    <p class="animation delay1 fadeInUp animated">
+                                    - 결혼식은 2016년 4월 2일 (토) 오후 2시 30분에 평촌역 앞의 <a href="http://place.map.daum.net/26905684" target="_blank">아르떼 채플 컨벤션 7층</a>에서 진행됩니다.<br />
+                                    - 식사는 결혼식 한 시간 전인 1시 30분부터 가능하며 갈비탕 및 한정식이 제공될 예정입니다. <br />
+                                    - 주차 안내는 식 당일 웨딩홀 근처로 오시면 받으실 수 있으며, 식장에서 주차권을 받아 가시면 2시간 무료 주차가 가능합니다.</p>
+                                    <p>- 정읍에서 오시는 분들은 차량이 준비되어 있으니 신랑측에 미리 연락해 주세요.</p>
+
                                 </div>
                             </div> <!--END of BOOTSTRAP GRID-->   
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 text-center">
-                                    <img src="./wedding_files/map.png" style="width:100%" />
+                                    <img src="./wedding_files/map.png" style="width:100%" alt="" />
                                     <p>주소 : 경기 안양시 동안구 시민대로 311 금강스마트빌딩 7층</p>
                                     <p>지하철 : 4호선 평촌역 3번 출구 길 건너편</p>
                                 </div>
@@ -199,7 +199,7 @@
                             	<div class="col-md-6 no-padding text-center">
                                     
                                     <!--PHOTO-ITEM-->
-                                    <div class="photo-item animation delay fadeInLeft animated" style="visibility: visible;">
+                                    <div class="photo-item animation delay fadeInLeft animated">
                         				<div class="photo-item-preview">
                                         	
                                             <!--HIS-PHOTO-->
@@ -214,11 +214,12 @@
                         			</div><!--END of PHOTO-ITEM-->
                                     
                                     <!--TEXT-->                                    
-                                    <div class="couple-text animation delay1 fadeInLeft animated" style="visibility: visible;">
+                                    <div class="couple-text animation delay1 fadeInLeft animated">
                                     	
                                         <!--HIS NAME/ABOUT HIM-->
                                 		<h3>한병환 / 송정아의 장남 한대희</h3>
-                                    	<p>대희군은 전북의 정읍이라는 조그만 도시에서 태어났습니다. 어렸을 때부터 주변 사물에 관심이 많아 집안의 전자기기들을 온통 다 뜯어놓던 대희는 공대에 진학해서 컴퓨터 공학을 공부하다가 취업을 하게 되고, 2013년 한 온라인 데이팅 회사에서 처음으로 미진양을 만났습니다. 동화처럼 첫 눈에 반하는 일은 일어나지 않았지만, 같은 공간에서 동료로 함께 시간을 보내며 서로에 대해 알아갔어요. 그러던 도중 한대희군은 어느 날 정미진양이 아주 매력적인 여자라는 것을 어느 순간 깨닫게 되었고, 열렬한 구애 끝에 그녀의 마음을 얻는 데에 성공했습니다.</p>
+                                    	<p>어렸을 때부터 주변 사물에 관심이 많아 집안의 전자기기들을 온통 다 뜯어놓던 대희군은 공대에 진학해서 컴퓨터 공학을 공부하다가 취업을 하게 되고, 2013년 한 온라인 데이팅 회사에서 처음으로 미진양을 만났습니다. 책을 좋아하는 미진양이 올린 글을 보면서 좋아하는 것들이 비슷한 사람이란 생각이 시작이었습니다. 영화처럼 첫 눈에 반하는 일은 일어나지 않았지만, 한 공간에서 동료로써 시간을 보내며 친절한 미진양에 대해 알아갔어요. 그러던 어느 날 놓칠 수 없는 그녀를 잡기로 했습니다. 계산은 빠르지만 마음을 읽는건 버벅거리던 대희군은 열정 100%의 구애 끝에 그녀의 마음을 얻는 데에 성공했습니다.</p>
+                                        <p>특징 : 어려운 상황에 대한 긍정적인 해석능력, 잘못에 대한 인정이 LTE급. 계산기가 필요없는 수학능력, 주말엔 집에서 에너지 충전이 필수.</p>
                                         
                                     </div><!--END of TEXT-->
                                     
@@ -229,7 +230,7 @@
                                 <div class="col-md-6 no-padding text-center">
                                 
                                		<!--PHOTO-ITEM-->
-                                    <div class="photo-item animation delay fadeInRight animated" style="visibility: visible;">
+                                    <div class="photo-item animation delay fadeInRight animated">
                         				<div class="photo-item-preview">
                                         
                                         	<!--HER PHOTO-->
@@ -244,11 +245,12 @@
                         			</div><!--END of PHOTO-ITEM-->
                                     
                                     <!--TEXT-->                                    
-                                    <div class="couple-text animation delay1 fadeInRight animated" style="visibility: visible;">
+                                    <div class="couple-text animation delay1 fadeInRight animated">
                                     	
                                         <!--HER NAME/ABOUT HER-->
                                 		<h3>정진하 / 김미숙의 장녀 정미진</h3>
-                                    	<p>때때로 싸우는 일도 있었지만, 둘은 행복한 연애를 했습니다. 계산에는 빠르지만 사람의 마음을 읽는 데에는 둔한 대희군과, 숫자에는 약하지만 아주 섬세하고 주변 사람을 잘 챙기는 미진양은 서로의 부족한 점들을 채워주며 알콩달콩 잘 지냈습니다. 이제는 남자친구 / 여자친구가 아닌 남편과 아내로서 서로의 앞길을 보살펴주려 합니다.</p>                                   
+                                    	<p>무엇이든 친구와 어울려 하길 좋아해서 골목 대장을 자처하며 학창시절을 보낸 미진양은 사람들은 어떤 생각을 하며 살아갈까라는 상상을 좋아하는 천생 문과생으로 프랑스어를 배우며 대학생활의 절반을 여행으로 채우던 중, 호기심이 이끄는 대로 사람을 이어준다는 이음에서 사회생활을 시작했어요. 인연을 만나는 사람들을 챙기고 도와주면서도 진짜 인연은 못 만나서 심심풀이 땅콩으로 책이나 읽고 있던 미진양에게 자꾸 무언가 물어보는 대희군은 대화가 잘 통하는 친구였습니다. 그러다 대화가 잘 통화는 착한 대희군과 연애를 하면 참 재미있겠다고 생각했고, 결혼을 해도 오래토록 즐겁게 살 수 있겠구나 생각해서 결혼을 결심하게 되었답니다.</p>                                   
+                                        <p>특징 : 음식을 통한 스트레스 해소능력, 한 번 보면 친구 - 두 번보면 베프 - 세 번 보면 패밀리. 안 되는 일도 되게하는 마력의 소유자.</p>
                                                                                  
                                     </div><!--END of TEXT-->
                                     
@@ -269,7 +271,7 @@
                         	
                             <!--PARALLAX PHOTO-->
                         	<div class="row">
-                                <div id="gallery-main-photo" style="background-position: 50% 95px;">
+                                <div id="gallery-main-photo">
                                	</div>
                             </div> <!--END of PARALLAX PHOTO-->
                             
@@ -279,8 +281,8 @@
                             	<div id="gallery-intro" class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 text-center">
                                 	
                                     <!--TITLE AND TEXT-->
-                                	<h2 class="animation fadeInUp animated" style="visibility: visible;">갤러리</h2>
-                                    <p class="animation delay1 fadeInUp animated" style="visibility: visible;"></p>                                            
+                                	<h2 class="animation fadeInUp animated">결혼을 실감하는 갤러리</h2>
+                                    <p class="animation delay1 fadeInUp animated"></p>                                            
                                     <!--<a href="#gallery-photo" class="smoothscroll animation delay1 fadeInUp"><div class="de-icon inlineblock medium-size "><i class="de-icon-down-open-big"></i></div></a>-->
                          		
                                 </div>
@@ -315,7 +317,7 @@
                         						<div class="photo-item-preview">
                                                 
                                         	 		<!-- PHOTO -->
-                                                    <img src="./wedding_files/gallery1.jpg" alt="">
+                                                    <img src="./wedding_files/gallery1.jpeg" alt="">
                                                     
                                              		<!-- PHOTO OVERLAY -->
                            							
@@ -333,7 +335,7 @@
                         						<div class="photo-item-preview">
                                                 
                                         	 		<!--PHOTO-->
-                                					<img src="./wedding_files/gallery2.jpg" alt="">
+                                					<img src="./wedding_files/gallery2.jpeg" alt="">
                                                     
                            				 		</div>
                         					</div><!--END of PHOTO-ITEM-->
@@ -349,7 +351,7 @@
                         						<div class="photo-item-preview">
                                                 
                                         	 		<!--PHOTO-->
-                                					<img src="./wedding_files/gallery3.jpg" alt="">                                                    
+                                					<img src="./wedding_files/gallery3.jpeg" alt="">                                                    
                                                  </div>   
                            					</div><!--END of PHOTO-ITEM-->
                                        	</div> <!--END of GALLERY ITEM-3-->
@@ -364,7 +366,7 @@
                         						<div class="photo-item-preview">
                                                 
                                         	 		<!--PHOTO-->
-                                					<img src="./wedding_files/gallery5.jpg" alt="">
+                                					<img src="./wedding_files/gallery4.jpeg" alt="">
                                                     
                            				 		</div>
                         					</div><!--END of PHOTO-ITEM-->
@@ -380,7 +382,7 @@
                         						<div class="photo-item-preview">
                                                 
                                         	 		<!--PHOTO-->
-                                					<img src="./wedding_files/gallery4.jpg" alt="">
+                                					<img src="./wedding_files/gallery5.jpeg" alt="">
                                                     
                                              		<!--PHOTO OVERLAY-->
                            				 		</div>
@@ -397,7 +399,7 @@
                         						<div class="photo-item-preview">
                                                 
                                         	 		<!--PHOTO-->
-                                					<img src="./wedding_files/gallery9.jpg" alt="">
+                                					<img src="./wedding_files/gallery6.jpeg" alt="">
                                                     
                                                     
                            				 		</div>
@@ -414,7 +416,7 @@
                         						<div class="photo-item-preview">
                                                 
                                         	 		<!--PHOTO-->
-                                					<img src="./wedding_files/gallery7.jpg" alt="">
+                                					<img src="./wedding_files/gallery7.jpeg" alt="">
                                                     
                            				 		</div>
                         					</div><!--END of PHOTO-ITEM-->
@@ -444,7 +446,7 @@
                         						<div class="photo-item-preview">
                                                 
                                         	 		<!--PHOTO-->
-                                					<img src="./wedding_files/gallery6.jpg" alt="">
+                                					<img src="./wedding_files/gallery9.jpeg" alt="">
                                                     
                            				 		</div>
                         					</div><!--END of PHOTO-ITEM-->
@@ -470,7 +472,7 @@
                         	
                             <!--PARALLAX PHOTO-->
                         	<div class="row">
-                                <div id="events-main-photo" style="background-position: 50% 121px;">
+                                <div id="events-main-photo">
                                 </div>
                             </div> <!--END of PARALLAX PHOTO-->
                             
@@ -480,17 +482,17 @@
                             	<div id="events-intro" class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 text-center">
                                  
                                 	<!--TITLE AND TEXT-->
-                                	<h3 class="animation fadeInUp animated" style="visibility: visible;">저희를 축하해 주세요!</h3>
+                                	<h3 class="animation fadeInUp animated">저희를 축하해 주세요!</h3>
                                     <br />
-                                 	<p class="animation delay1 fadeInUp animated" style="visibility: visible;">
+                                 	<p class="animation delay1 fadeInUp animated">
                                       <a href="http://facebook.com/daeheeh" target="_blank">신랑의 페이스북에 글 남기기</a>
                                     </p>           
-                                    <p class="animation delay1 fadeInUp animated" style="visibility: visible;">
+                                    <p class="animation delay1 fadeInUp animated">
                                       <a href="https://www.facebook.com/Revehumajin">신부의 페이스북에 글 남기기</a>
                                       </p>
 
                                     <br />
-                                    <p class="animation delay1 fadeInUp animated" style="visibility: visible;">
+                                    <p class="animation delay1 fadeInUp animated">
                                         <a id="kakao-link-btn" href="javascript:;">
                                         카카오톡으로 청첩장 전달하기
                                         </a>
