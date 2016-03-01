@@ -86,8 +86,10 @@ html {
 body, html {
 	width:100%;
 	background-color:#FFF;
-	font-family: 'PT Sans', sans-serif;	
+	font-family: 'arial', sans-serif;	
 	color:#747474;
+	word-wrap: normal;
+	word-break: keep-all;
 }
 
 a{
@@ -112,7 +114,7 @@ h3,
 h4,
 h5, 
 h6 {
-	font-family: 'Pacifico', cursive;
+	font-family: 'arial';
 	color:#444444;
 }
 
@@ -518,7 +520,7 @@ p a:hover{
 
 #slider-date{
 	position:absolute; 
-	bottom:70px; 
+	bottom:220px; 
 	width:100%; 
 	text-align:center
 }
@@ -1329,7 +1331,9 @@ a:hover .de-icon.effect3{
 	webkit-overflow-scrolling: touch 
 }
 
-
+#slider-title .block-centered {
+	margin-top: 30%;
+}
 /*===============================================*/
 /* 08. MEDIA SCREEN		  						 */
 /*===============================================*/
@@ -1773,6 +1777,7 @@ a:hover .de-icon.effect3{
 @media (max-width:570px) and (orientation : portrait) {
 /* 03. Map/Location                   			 */
 /* ----------------------------------------------*/
+
 #location_map{
 	height: 340px;
 	margin-top:-170px;
@@ -1787,7 +1792,7 @@ a:hover .de-icon.effect3{
 }
 
 #small-title{
-	font-size:13px;
+	font-size:24px;
 }
 
 #countdown{
