@@ -494,15 +494,36 @@
 
                                     <br />
                                     <p class="animation delay1 fadeInUp animated">
-                                        <a id="kakao-link-btn" href="javascript:;">
-                                        카카오톡으로 청첩장 전달하기
-                                        </a>
+                                        <h4>청첩장 전달하기</h4>
                                     </p>                
                                     <p>
-                                    <span>
+
+                                    <p>
+                                        <a id="kakao-link-btn" href="javascript:;">
+                                            <img src="./wedding_files/kakao.png" width="26" alt="카카오톡으로 청첩장 전달하기" />
+                                        </a>
+                                    </p>
+                                    <script>
+                                      window.kakaoAsyncInit = function () {
+                                        Kakao.Story.createShareButton({
+                                          container: '#kakaostory-share-button'
+                                        });
+                                      };
+
+                                      (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = "//developers.kakao.com/sdk/js/kakao.story.min.js";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                      }(document, 'script', 'kakao-js-sdk'));
+                                    </script>
+                                    <div id="kakaostory-share-button" data-url="http://mijin-daehee.github.io" style="inline-block;margin-top:18px"></div>
+                                    <br />
+                                    <span class="band">
                                         <script type="text/javascript" src="//developers.band.us/js/share/band-button.js?v=20160301"></script>
                                         <script type="text/javascript">
-                                        new ShareBand.makeButton({"lang":"ko","type":"f"}  );
+                                        new ShareBand.makeButton({"lang":"ko","type":"c"}  );
                                         </script>
                                     </span>
                                     </p>                            

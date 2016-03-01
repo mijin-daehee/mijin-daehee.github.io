@@ -128,6 +128,11 @@ h6 a{
 	text-decoration:none;
 }
 
+.band img {
+	width: 24px !important;
+	height: 24px !important;
+}
+
 h1 a:hover, 
 h2 a:hover, 
 h3 a:hover,
