@@ -499,6 +499,25 @@
                                         <a id="kakao-link-btn" href="javascript:;">
                                             <img src="./wedding_files/kakao.png" width="26" alt="카카오톡으로 청첩장 전달하기" />
                                         </a>
+                                        <script>
+                                        // 사용할 앱의 JavaScript 키를 설정해 주세요.
+                                        Kakao.init('eb61289ee4de0940117a0aefcb3c32a1');
+
+                                        // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+                                        Kakao.Link.createTalkLinkButton({
+                                          container: '#kakao-link-btn',
+                                          label: '4월 2일 미진 + 대희 결혼합니다',
+                                          image: {
+                                            src: 'http://mijin-daehee.github.io/wedding_files/preloader.jpg',
+                                            width: '300',
+                                            height: '200'
+                                          },
+                                          webButton: {
+                                            text: '4월 2일 미진 + 대희 결혼합니다',
+                                            url: 'http://mijin-daehee.github.io' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+                                          }
+                                        });
+                                    </script>
                                     </p>
                                     <script>
                                       window.kakaoAsyncInit = function () {
@@ -586,24 +605,6 @@
         <script type="text/javascript" src="./wedding_files/script.js"></script> 
         <script type="text/javascript" src="./wedding_files/custom-sticky.js"></script>
         <script type="text/javascript" src="./wedding_files/style-switcher.js"></script> 
-        <script>
-            // 사용할 앱의 JavaScript 키를 설정해 주세요.
-            Kakao.init('eb61289ee4de0940117a0aefcb3c32a1');
-
-            // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-            Kakao.Link.createTalkLinkButton({
-              container: '#kakao-link-btn',
-              label: '4월 2일 미진 + 대희 결혼합니다',
-              image: {
-                src: 'http://mijin-daehee.github.io/wedding_files/preloader.jpg',
-                width: '300',
-                height: '200'
-              },
-              webButton: {
-                text: '4월 2일 미진 + 대희 결혼합니다',
-                url: 'http://mijin-daehee.github.io' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
-              }
-            });
-            </script>
+        
 </body>
 </html>
